@@ -138,8 +138,7 @@ public class VarCalculation {
 		double[] dailyReturnValue = ArrayUtils
 				.toPrimitive(portfolioDailyReturnHT.values().toArray(new Double[portfolioDailyReturnHT.size()]));
 		stat.setData(dailyReturnValue);
-		System.out.println(Arrays.toString(dailyReturnValue));
-		System.out.println(stat.evaluate(desiredPercentile));
+
 		valueAtRisk = stat.evaluate(desiredPercentile);
 
 		return valueAtRisk;

@@ -32,15 +32,8 @@ public class Main {
 
 		List<Asset> portfolioHistoricalData = new ArrayList<>();
 
-		LocalDate date = LocalDate.of(2023, 5, 22);
-
-		Asset asset = new Asset(date.atStartOfDay(), 85.00, assetKellog);
-		Asset asset2 = new Asset(date.atStartOfDay(), 199.55, assetVFINX);
-
 		portfolioHistoricalData.addAll(VFINXHisotricalData);
 		portfolioHistoricalData.addAll(kellogHistoricalData);
-		portfolioHistoricalData.add(asset2);
-		portfolioHistoricalData.add(asset);
 
 
 		try {
