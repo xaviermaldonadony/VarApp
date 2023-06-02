@@ -21,6 +21,7 @@ This is the solution for Calculating Var. For either a trade or a portfolio usin
 	VaR is calculated by this asset using method getVarForTrade.
 	Method requires: confidence level, historical data and assets investment amount
 
+
 	Logic, method sorts trades by date (Desc) calculates Percent Return using the previous trade price.
 	Return Value for the asset is calculated with Percent return for that day multiply by asset's investment amount, for each day.
 	VaR is the result of taking the Percentile of the return for each day and using 1 - confidence level as the thresh hold.
@@ -29,9 +30,10 @@ This is the solution for Calculating Var. For either a trade or a portfolio usin
   To calculate for a portfolio, create historical data for asset named VFINX.
   Create Portfolio by adding the two historical data in the portfolio.
 
+
 	Logic, Similar to calc for trade.
 	Method requires: confidence level, historical data and assets investment amount for each asset.
-	 The only difference is the historical data is  grouped by asset's Name and sorted by date.
+	The only difference is the historical data is  grouped by asset's Name and sorted by date.
 	The return value is the addition of all the  assets for that day.
 	Var is calculated as getVarForTrade method.
 
